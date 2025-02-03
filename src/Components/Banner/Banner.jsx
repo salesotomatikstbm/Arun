@@ -67,7 +67,7 @@ const Banner = () => {
                   Currently available for freelance
                 </span>
                 <span className="d-flex gap-4 align-items-center">
-                  worldwide
+                  India
                   <i className="bi bi-arrow-up-right"></i>
                 </span>
               </Link>
