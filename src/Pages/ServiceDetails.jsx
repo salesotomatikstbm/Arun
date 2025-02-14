@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { PlayFill, ArrowRight } from "react-bootstrap-icons";
 import PageHeader from "../Components/Shared/PageHeader/PageHeader";
 import Accordion from "../Components/Accordion/Accordion";
@@ -39,6 +40,18 @@ const accordionList = [
 const ServiceDetails = () => {
   return (
     <>
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Service Details</title>
+        <meta name="description" content="Enhance your business identity with our professional branding and graphic design services. We create logos, social media graphics, and marketing materials using Canva and Adobe." />
+        <meta name="keywords" content="business branding, graphic design, logo design, branding materials, Canva, Adobe, social media graphics" />
+        <meta name="author" content="Your Brand Name" />
+        <meta property="og:title" content="Business Branding Services | Professional Branding & Design" />
+        <meta property="og:description" content="Stand out with stunning branding designs. Our services include logo creation, social media graphics, and marketing materials for businesses." />
+        <meta property="og:image" content={serDv1} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <PageHeader heading={"Business Branding"} page={"Business Branding"} />
       <section className="service__details overhid pb-120">
         <div className="container">
@@ -46,7 +59,7 @@ const ServiceDetails = () => {
             <div className="col-lg-8">
               <div className="ser__left__details">
                 <div className="thumb">
-                  <img src={serDv1} alt="img" />
+                  <img src={serDv1} alt="Business Branding Service" />
                 </div>
                 <div
                   className="text__box mb__cus60"
@@ -85,7 +98,7 @@ const ServiceDetails = () => {
                   </p>
                 </div>
                 <div className="paythumb position-relative">
-                  <img src={serDv2} alt="img" />
+                  <img src={serDv2} alt="Branding Process" />
                   <a
                     href="https://www.youtube.com/embed/GxmfcnU3feo?si=T_JeKE_LLTKqeN4u"
                     className="video__80 video-btn"
@@ -136,7 +149,7 @@ const ServiceDetails = () => {
                 </div>
                 <div className="service__rightbox">
                   <div className="thumb">
-                    <img src={detialcontact} alt="img" />
+                    <img src={detialcontact} alt="Contact for Services" />
                     <a href="#0" className="cmn--btn">
                       <span>Contact Me</span>
                       <span>

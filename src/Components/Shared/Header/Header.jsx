@@ -71,6 +71,11 @@ const menuList = [
     path: "/contact",
     name: "Contact",
   },
+  {
+    id: 8,
+    path: "/aruna",
+   
+  },
 ];
 
 const Header = () => {
