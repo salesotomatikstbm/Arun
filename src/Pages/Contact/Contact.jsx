@@ -54,7 +54,7 @@ const Contact = () => {
                 </div>
                 <div className="contact__item">
                   <span className="he1">Address</span>
-                  <span className="address">Thottiyam, Kallakurichi, 606 201</span>
+                  <span className="address">Thottiyam, Kallakurichi, 606201</span>
                 </div>
               </div>
             </div>
